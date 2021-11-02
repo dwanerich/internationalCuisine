@@ -1,9 +1,12 @@
-// Selector
-
-const cuisineInput = document.getElementById('cuisine-input');
-const submitButton = document.getElementById('input-button')
-const cuisineList = document.getElementById('cuisine-list')
+// Variables
+let submitButton = document.getElementById('submit')
+let foodInput = document.getElementById('cuisineInput')
+let cuisineInput = document.getElementById('cuisineContainer')
 
 // Event Listeners
-
-//  Functions
+submitButton.addEventListener('click', function() {
+    let cuisineDiv= document.createElement('div')
+    cuisineDiv.innerText = foodInput.value;
+    cuisineContainer.appendChild(cuisineDiv);
+    foodInput.value = '';
+})

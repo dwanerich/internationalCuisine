@@ -23,25 +23,18 @@
         
         <!-- form input section -->
         
-        <form>
-            <div class="input-group mb-3">
+        <form id='form'>
                 
-                <input type="text" class="form-control" id='cuisine-input' placeholder="enter cuisine here..." aria-label="Recipient's username"
+                <input type="text" class="form-control" id='cuisineInput' placeholder="enter cuisine here..." aria-label="Recipient's username"
                 aria-describedby="basic-addon2">
-                    <button class='btn btn-success' id='submit-button' type='submit'>➕ </button>
-                    <button class='btn btn-danger' id='delete-button'>🗑 </button>
-
-                </div>
+                <input type='submit' class='btn btn-success' id='submit' value='➕'>
         </form>
         
         
-        <div class='cuisine-container'>
-            
-            <ul class='cuisine-list'>cuisine list appear here</ul>
-        </div>
-        
-        
-        <script src="app.js"></script>
+        <h1 id='cuisineContainer'></h1>
+        <h1></h1>
+
     </div>
+    <script src="./app.js"></script>
 </body>
 </html>
