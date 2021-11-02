@@ -6,7 +6,7 @@ let cuisineList = document.getElementById('cuisineContainer')
 // Event Listeners
 submitButton.addEventListener('click', function() {
     let cuisineDiv = document.createElement('div')
-    cuisineDiv.classList.add('div-style')
+    cuisineDiv.classList.add('divStyle')
     cuisineDiv.innerText = foodInput.value;
     cuisineList.appendChild(cuisineDiv);
     foodInput.value = '';
@@ -14,7 +14,7 @@ submitButton.addEventListener('click', function() {
         cuisineDiv.style.textDecoration = 'line-through'
     })
     
-    cuisineList.addEventListener('dblclick', function(){
+    cuisineDiv.addEventListener('dblclick', function(){
         cuisineList.removeChild(cuisineDiv);
     })
 })
