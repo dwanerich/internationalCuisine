@@ -24,19 +24,21 @@
         <!-- form input section -->
         
         <div id='input-alert'></div>
-        <form id='form'>
+        <form id='form' class='form'>
                 
-                <input type="text" class="form-control" id='cuisineInput' placeholder="enter cuisine here..." aria-label="Recipient's username"
-                aria-describedby="basic-addon2">
-                <input type="text" class="form-control" id='ingredientInput' placeholder="enter ingredient here..."
+                <input type="text" name='name' class="form-control" id='cuisine-input' placeholder="enter cuisine here..."
+                aria-label="Recipient's username"aria-describedby="basic-addon2">
+                <input type="text" name='ingredient' class="form-control" id='ingredient-input' placeholder="enter ingredient here..."
                     aria-label="Recipient's username" aria-describedby="basic-addon2">
-                <input type='submit' class='btn btn-success' id='submit' value='➕'>
+                <input type='submit' name='submit' class='btn btn-success' id='submit' value='➕'>
         </form>
         
         
-        <ul id='cuisineContainer'></ul>
+        <ul id='cuisine-container' class='cuisine-container'></ul>
 
     </div>
-    <script src="./app.js"></script>
+    <script src="./index.js"></script>
+        <script src="./ApiService.js"></script>
+
 </body>
 </html>
